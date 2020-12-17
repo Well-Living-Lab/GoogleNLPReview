@@ -1,5 +1,5 @@
 
-<img src="//static1.squarespace.com/static/5ea9e3ec35b2f040617d45b7/t/5edeabbf4fd0c070ec514216/1607453857624/?format=1500w" alt="Well Living Lab logo" align="right" height="96" width="96"/>
+<img src="logo.png" alt="Well Living Lab logo" align="right" height="96" width="96"/>
 
 # [Natural Language: Node.js Samples](https://github.com/googleapis/nodejs-language)
 
