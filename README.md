@@ -10,7 +10,7 @@ analysis, and syntax analysis. This API is part of the larger Cloud Machine Lear
 ## Before you begin
 
 1.  [Select or create a Cloud Platform project.](https://console.cloud.google.com/project)
-1.  [Enable billing for your project.] (https://cloud.google.com/billing/docs/how-to/modify-project?visit_id=637438212173208447-2574262482&rd=1#enable-billing)
+1.  [Enable billing for your project.](https://cloud.google.com/billing/docs/how-to/modify-project?visit_id=637438212173208447-2574262482&rd=1#enable-billing)
 1.  [Enable the Natural Language API.](https://console.cloud.google.com/flows/enableapi?apiid=language.googleapis.com)
 1.  [Set up authentication with a service account so you can access the API from your local workstation.](https://cloud.google.com/docs/authentication/getting-started)
 
