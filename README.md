@@ -9,8 +9,8 @@ analysis, and syntax analysis. This API is part of the larger Cloud Machine Lear
 ## Table of Contents
 
 * Before you begin
- * Installing the client library
- * Using the client library
+  * Installing the client library
+  * Using the client library
 * [Samples](#samples)
   * [Analyze v1](#analyze-v1)
   * [Quickstart](#quickstart)
