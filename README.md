@@ -1,7 +1,7 @@
 
 <img src="logo.png" alt="Well Living Lab logo" align="right" height="96" width="96"/>
 
-# [Natural Language: Node.js Samples](https://github.com/googleapis/nodejs-language)
+# [Google Natural Language API Node.js Samples](https://github.com/googleapis/nodejs-language)
 
 
 [Cloud Natural Language API](https://cloud.google.com/natural-language/docs) provides natural
