@@ -65,8 +65,6 @@ async function quickstart() {
 
 View the [source code](https://github.com/googleapis/nodejs-language/blob/master/samples/analyze.v1.js).
 
-[![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-language&page=editor&open_in_editor=samples/analyze.v1.js,samples/README.md)
-
 __Usage:__
 
 `cd GoogleNLPReview`
