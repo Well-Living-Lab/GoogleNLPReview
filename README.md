@@ -1,7 +1,6 @@
 
 # [Natural Language: Node.js Samples](https://github.com/googleapis/nodejs-language)
 
-[![Open in Cloud Shell][shell_img]][shell_link]
 
 [Cloud Natural Language API](https://cloud.google.com/natural-language/docs) provides natural
 language understanding technologies to developers, including sentiment analysis, entity
@@ -9,7 +8,9 @@ analysis, and syntax analysis. This API is part of the larger Cloud Machine Lear
 
 ## Table of Contents
 
-* [Before you begin](#before-you-begin)
+* Before you begin
+ * Installing the client library
+ * Using the client library
 * [Samples](#samples)
   * [Analyze v1](#analyze-v1)
   * [Quickstart](#quickstart)
@@ -17,8 +18,51 @@ analysis, and syntax analysis. This API is part of the larger Cloud Machine Lear
 
 ## Before you begin
 
-Before running the samples, make sure you've followed the steps outlined in
-[Using the client library](https://github.com/googleapis/nodejs-language#using-the-client-library).
+1.  [Select or create a Cloud Platform project][projects].
+1.  [Enable billing for your project][billing].
+1.  [Enable the Natural Language API][enable_api].
+1.  [Set up authentication with a service account][auth] so you can access the
+    API from your local workstation.
+
+### Installing the client library
+
+```bash
+npm install @google-cloud/language
+```
+
+
+### Using the client library
+
+```javascript
+async function quickstart() {
+  // Imports the Google Cloud client library
+  const language = require('@google-cloud/language');
+
+  // Instantiates a client
+  const client = new language.LanguageServiceClient();
+
+  // The text to analyze
+  const text = 'Hello, world!';
+
+  const document = {
+    content: text,
+    type: 'PLAIN_TEXT',
+  };
+
+  // Detects the sentiment of the text
+  const [result] = await client.analyzeSentiment({document: document});
+  const sentiment = result.documentSentiment;
+
+  console.log(`Text: ${text}`);
+  console.log(`Sentiment score: ${sentiment.score}`);
+  console.log(`Sentiment magnitude: ${sentiment.magnitude}`);
+}
+
+```
+
+
+
+
 
 `cd samples`
 
