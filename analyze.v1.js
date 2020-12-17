@@ -1,4 +1,5 @@
 // Copyright 2017 Google LLC
+// Copyright 2018, Well Living Lab
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,22 +13,16 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+
 'use strict';
 
-// sample-metadata:
-//  title: Analyze v1
 async function analyzeSentimentOfText(text) {
-  // [START language_sentiment_text]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
 
-  /**
-   * TODO(developer): Uncomment the following line to run this code.
-   */
-  //const text = 'Your text to analyze, e.g. Hello, world!';
 
   // Prepares a document, representing the provided text
   const document = {
@@ -50,22 +45,14 @@ async function analyzeSentimentOfText(text) {
     console.log(`  Magnitude: ${sentence.sentiment.magnitude}`);
   });
 
-  // [END language_sentiment_text]
 }
 
 async function analyzeSentimentInFile(bucketName, fileName) {
-  // [START language_sentiment_gcs]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
-
-  /**
-   * TODO(developer): Uncomment the following lines to run this code
-   */
-  // const bucketName = 'Your bucket name, e.g. my-bucket';
-  // const fileName = 'Your file name, e.g. my-file.txt';
 
   // Prepares a document, representing a text file in Cloud Storage
   const document = {
@@ -87,21 +74,15 @@ async function analyzeSentimentInFile(bucketName, fileName) {
     console.log(`  Score: ${sentence.sentiment.score}`);
     console.log(`  Magnitude: ${sentence.sentiment.magnitude}`);
   });
-  // [END language_sentiment_gcs]
 }
 
 async function analyzeEntitiesOfText(text) {
-  // [START language_entities_text]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
 
-  /**
-   * TODO(developer): Uncomment the following line to run this code.
-   */
-  // const text = 'Your text to analyze, e.g. Hello, world!';
 
   // Prepares a document, representing the provided text
   const document = {
@@ -122,22 +103,17 @@ async function analyzeEntitiesOfText(text) {
       console.log(` - Wikipedia URL: ${entity.metadata.wikipedia_url}`);
     }
   });
-  // [END language_entities_text]
 }
 
+
+//Language Entities
+
 async function analyzeEntitiesInFile(bucketName, fileName) {
-  // [START language_entities_gcs]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
-
-  /**
-   * TODO(developer): Uncomment the following lines to run this code
-   */
-  // const bucketName = 'Your bucket name, e.g. my-bucket';
-  // const fileName = 'Your file name, e.g. my-file.txt';
 
   // Prepares a document, representing a text file in Cloud Storage
   const document = {
@@ -158,21 +134,15 @@ async function analyzeEntitiesInFile(bucketName, fileName) {
     }
   });
 
-  // [END language_entities_gcs]
 }
 
+//Language Syntax
 async function analyzeSyntaxOfText(text) {
-  // [START language_syntax_text]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
-
-  /**
-   * TODO(developer): Uncomment the following line to run this code.
-   */
-  // const text = 'Your text to analyze, e.g. Hello, world!';
 
   // Prepares a document, representing the provided text
   const document = {
@@ -191,22 +161,15 @@ async function analyzeSyntaxOfText(text) {
     console.log(`${part.partOfSpeech.tag}: ${part.text.content}`);
     console.log('Morphology:', part.partOfSpeech);
   });
-  // [END language_syntax_text]
 }
 
 async function analyzeSyntaxInFile(bucketName, fileName) {
-  // [START language_syntax_gcs]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
 
-  /**
-   * TODO(developer): Uncomment the following lines to run this code
-   */
-  // const bucketName = 'Your bucket name, e.g. my-bucket';
-  // const fileName = 'Your file name, e.g. my-file.txt';
 
   // Prepares a document, representing a text file in Cloud Storage
   const document = {
@@ -225,21 +188,14 @@ async function analyzeSyntaxInFile(bucketName, fileName) {
     console.log(`${part.partOfSpeech.tag}: ${part.text.content}`);
     console.log('Morphology:', part.partOfSpeech);
   });
-  // [END language_syntax_gcs]
 }
 
 async function analyzeEntitySentimentOfText(text) {
-  // [START language_entity_sentiment_text]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
-
-  /**
-   * TODO(developer): Uncomment the following line to run this code.
-   */
-  // const text = 'Your text to analyze, e.g. Hello, world!';
 
   // Prepares a document, representing the provided text
   const document = {
@@ -262,18 +218,12 @@ async function analyzeEntitySentimentOfText(text) {
 }
 
 async function analyzeEntitySentimentInFile(bucketName, fileName) {
-  // [START language_entity_sentiment_gcs]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
 
-  /**
-   * TODO(developer): Uncomment the following lines to run this code
-   */
-  // const bucketName = 'Your bucket name, e.g. my-bucket';
-  // const fileName = 'Your file name, e.g. my-file.txt';
 
   // Prepares a document, representing a text file in Cloud Storage
   const document = {
@@ -292,21 +242,15 @@ async function analyzeEntitySentimentInFile(bucketName, fileName) {
     console.log(`  Score: ${entity.sentiment.score}`);
     console.log(`  Magnitude: ${entity.sentiment.magnitude}`);
   });
-  // [END language_entity_sentiment_gcs]
 }
 
 async function classifyTextOfText(text) {
-  // [START language_classify_text]
   // Imports the Google Cloud client library
   const language = require('@google-cloud/language');
 
   // Creates a client
   const client = new language.LanguageServiceClient();
 
-  /**
-   * TODO(developer): Uncomment the following line to run this code.
-   */
-  // const text = 'Your text to analyze, e.g. Hello, world!';
 
   // Prepares a document, representing the provided text
   const document = {
@@ -324,18 +268,11 @@ async function classifyTextOfText(text) {
 }
 
 async function classifyTextInFile(bucketName, fileName) {
-  // [START language_classify_gcs]
   // Imports the Google Cloud client library.
   const language = require('@google-cloud/language');
 
   // Creates a client.
   const client = new language.LanguageServiceClient();
-
-  /**
-   * TODO(developer): Uncomment the following lines to run this code
-   */
-  // const bucketName = 'Your bucket name, e.g. my-bucket';
-  // const fileName = 'Your file name, e.g. my-file.txt';
 
   // Prepares a document, representing a text file in Cloud Storage
   const document = {
@@ -350,7 +287,6 @@ async function classifyTextInFile(bucketName, fileName) {
   classification.categories.forEach(category => {
     console.log(`Name: ${category.name}, Confidence: ${category.confidence}`);
   });
-  // [END language_classify_gcs]
 }
 
 require('yargs')
