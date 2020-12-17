@@ -81,13 +81,13 @@ analyze.v1.js syntax-text <text>         =>                    Detects syntax of
 
 analyze.v1.js syntax-file <bucketName> <fileName>  =>         Detects syntax in a file in Google Cloud Storage.
 
-analyze.v1.js entity-sentiment-text <text>                   Detects sentiment of the entities in a string.
+analyze.v1.js entity-sentiment-text <text>     =>               Detects sentiment of the entities in a string.
 
-analyze.v1.js entity-sentiment-file <bucketName> <fileName>  Detects sentiment of the entities in a file in Google Cloud Storage.
+analyze.v1.js entity-sentiment-file <bucketName> <fileName>  => Detects sentiment of the entities in a file in Google Cloud Storage.
 
-analyze.v1.js classify-text <text>                           Classifies text of a string.
+analyze.v1.js classify-text <text>      =>                      Classifies text of a string.
 
-analyze.v1.js classify-file <bucketName> <fileName>          Classifies text in a file in Google Cloud Storage.
+analyze.v1.js classify-file <bucketName> <fileName>   =>        Classifies text in a file in Google Cloud Storage.
 
 
 
