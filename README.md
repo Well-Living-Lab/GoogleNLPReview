@@ -57,16 +57,7 @@ async function quickstart() {
 ```
 
 
-
-
-
-`cd samples`
-
-`npm install`
-
-`cd ..`
-
-## Samples
+## Sample
 
 
 
@@ -78,42 +69,15 @@ View the [source code](https://github.com/googleapis/nodejs-language/blob/master
 
 __Usage:__
 
+`cd GoogleNLPReview`
 
-`node samples/analyze.v1.js`
+`npm install`
 
-
------
-
-
-
-
-### Quickstart
-
-View the [source code](https://github.com/googleapis/nodejs-language/blob/master/samples/quickstart.js).
-
-[![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-language&page=editor&open_in_editor=samples/quickstart.js,samples/README.md)
-
-__Usage:__
-
-
-`node samples/quickstart.js`
+`node analyze.v1.js`
 
 
 -----
 
-
-
-
-### Set Endpoint
-
-View the [source code](https://github.com/googleapis/nodejs-language/blob/master/samples/setEndpoint.js).
-
-[![Open in Cloud Shell][shell_img]](https://console.cloud.google.com/cloudshell/open?git_repo=https://github.com/googleapis/nodejs-language&page=editor&open_in_editor=samples/setEndpoint.js,samples/README.md)
-
-__Usage:__
-
-
-`node samples/setEndpoint.js`
 
 
 
