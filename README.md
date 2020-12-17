@@ -9,20 +9,16 @@ analysis, and syntax analysis. This API is part of the larger Cloud Machine Lear
 ## Table of Contents
 
 * Before you begin
-  * Installing the client library
-  * Using the client library
-* [Samples](#samples)
-  * [Analyze v1](#analyze-v1)
-  * [Quickstart](#quickstart)
-  * [Set Endpoint](#set-endpoint)
+  * Install the client library
+  * Use client library
+
 
 ## Before you begin
 
-1.  [Select or create a Cloud Platform project][projects].
-1.  [Enable billing for your project][billing].
-1.  [Enable the Natural Language API][enable_api].
-1.  [Set up authentication with a service account][auth] so you can access the
-    API from your local workstation.
+1.  Select or create a Cloud Platform project.
+1.  Enable billing for your project.
+1.  Enable the Natural Language API.
+1.  Set up authentication with a service account so you can access the API from your local workstation.
 
 ### Installing the client library
 
