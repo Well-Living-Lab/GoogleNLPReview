@@ -63,7 +63,7 @@ async function quickstart() {
 
 ### Analyze v1
 
-View the [source code](https://github.com/googleapis/nodejs-language/blob/master/samples/analyze.v1.js).
+View the original from Google's Sample repository [source code](https://github.com/googleapis/nodejs-language/blob/master/samples/analyze.v1.js).
 
 __Usage:__
 
